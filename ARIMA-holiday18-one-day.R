@@ -139,15 +139,7 @@ mydataf <- lapply(1:ncol(sample.path[[1]]), function(y) as.data.frame(sapply(sam
 # name the data frames
 names(mydataf) <- 1:length(mydataf)
 
-## if we need to read the error files
-# error.train.all <-  import_list(dir(pattern = ".csv"))
-# error.train.all <- lapply(error.train.all, "[", -1)
-# error.train.all <- error.train.all[order(as.numeric(names(error.train.all)))]
-# 
-# error.train.all1 <- do.call("cbind", error.train.all)
-
 fc.ARIMA.res <- list()
-
 for(i in 0:0){
   fc.ARIMA.res[[i+1]] <- error.train.all[(1+(312*i)):(312+(312*i)),]
 }
@@ -229,23 +221,6 @@ for(i in 1:length(mydataf2)){
   quan05[,i] <-  apply(mydataf2[[i]], 1, quantile, probs= c(0.05))
 }
 
-
-
-## if we need to read errors and fc files
-
-# error.train.all <-  import_list(dir(pattern = ".csv"))
-# error.train.all <- lapply(error.train.all, "[", -1)
-# error.train.all <- error.train.all[order(as.numeric(names(error.train.all)))]
-# 
-# error.train.all1 <- do.call("cbind", error.train.all)
-# colnames(error.train.all1) <- colnames(allyhour2021)
-# 
-# fc.train.all <-  import_list(dir(pattern = ".csv"))
-# fc.train.all <- lapply(fc.train.all, "[", -1)
-# fc.train.all <- fc.train.all[order(as.numeric(names(fc.train.all)))]
-# 
-# fc.train.all1 <- do.call("cbind", fc.train.all)
-# colnames(fc.train.all1) <- colnames(allyhour2021)
 
 ## Reconciling base forecasts
 colnames(fc.ARIMA) <- colnames(allyhourall)
