@@ -10,3 +10,6 @@ and 2021 (73 days - 1752 hours). Our time series is the number of vehicles colle
 Our results show that the number of anomalies in the north direction is higher in central Taiwan on highways No. 
 1 and 3, while in the south direction, it is higher in the southern area on highway No. 3. 
 In contrast, the east and west directions, elevated No.1 highway, show fewer anomalies. 
+
+### Note:
+For complete dataset please contact: mah.ashouri62@gmail.com
