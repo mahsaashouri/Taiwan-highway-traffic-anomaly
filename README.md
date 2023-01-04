@@ -7,6 +7,12 @@ forecasts and bootstrapped prediction intervals. Two fundamental features of tra
 Fourier terms in OLS models, spatial aggregation, and reconciliation step. Our OLS approach is a simple method that models complex traffic datasets with reasonable 
 accuracy while avoiding the computational problem. Our dataset includes hourly time series of Taiwan's consecutive holidays in 2019, 2020, 
 and 2021 (73 days - 1752 hours). Our time series is the number of vehicles collected by the Electronic Tolling Collection (ETC) system on three main highways. 
+
+The following figure shows an examples of Taiwanese highway hourly time series (from 2021-01-10 23:00:00 to 2021-04-30 22:00:00) 
+in northern region, Zhongli runway - Hukou, south direction, and car as vehicle types:
+
+![alt text](<https://github.com/mahsaashouri/Taiwan-highway-traffic-anomaly/blob/main/N2971S31.png>)
+ 
 Our results show that the number of anomalies in the north direction is higher in central Taiwan on highways No. 
 1 and 3, while in the south direction, it is higher in the southern area on highway No. 3. 
 In contrast, the east and west directions, elevated No.1 highway, show fewer anomalies. 
