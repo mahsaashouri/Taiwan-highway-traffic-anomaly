@@ -111,3 +111,24 @@ ggplot(data = year.data) + geom_line(aes(x = date, y = data)) +
     axis.text.y = element_text(size = 20),
     legend.title=element_text(size=20), 
     legend.text=element_text(size=20))
+
+## ACF and PACF plots
+
+ggAcf(year.data$data, main='') + 
+  theme(
+    axis.title.x = element_text(size = 20),
+    axis.text.x = element_text(size = 20),
+    axis.title.y = element_text(size = 20),
+    axis.text.y = element_text(size = 20),
+    legend.title=element_text(size=20), 
+    legend.text=element_text(size=20))
+
+ggPacf(year.data$data , main='') + 
+  theme(
+    axis.title.x = element_text(size = 20),
+    axis.text.x = element_text(size = 20),
+    axis.title.y = element_text(size = 20),
+    axis.text.y = element_text(size = 20),
+    legend.title=element_text(size=20), 
+    legend.text=element_text(size=20))
+
